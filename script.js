@@ -28,7 +28,13 @@ function getComputerChoice() {
     }
   // your code here!
 }
+
+function game(){
+  return playRound
+
+}
  
 let playerSelection = prompt("rock paper scissors");
+playerSelection = playerSelection.toLowerCase()
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
