@@ -8,7 +8,6 @@ function getComputerChoice(){
 
 }
 
-console.log(getComputerChoice)
 // create a funtion that plays one round of rock paper and scissors
 
 function playRound(playerSelection, computerSelection){
@@ -17,15 +16,24 @@ function playRound(playerSelection, computerSelection){
        playerSelection === "paper" && computerSelection ==="scissors"||
        playerSelection === "scissors" && computerSelection ==="rock"){
         return `you lose ${computerSelection} beats ${playerSelection}`
-       }else if(playerSelection == computerSelection){
+       }else if(playerSelection === computerSelection){
         return "tie"
        }else{
         return `you win ${playerSelection} beats ${computerSelection}`
        }
 }
 
+function game(){
+    playRound(playerSelection, computerSelection)
+    playRound(playerSelection, computerSelection)
+    playRound(playerSelection, computerSelection)
+    playRound(playerSelection, computerSelection)
+    playRound(playerSelection, computerSelection)
+    
+}
 
-const playerSelection = prompt("rock paper or scissors").toUpperCase()
+// const playerSelection = prompt("rock paper or scissors").toLowerCase()
+const playerSelection = "rock"
 
 const computerSelection = getComputerChoice();
 
