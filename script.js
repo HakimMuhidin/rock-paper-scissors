@@ -3,9 +3,8 @@
 
 
 function getComputerChoice(){
-    choises = ["rock", "paper", "scissors"];
-    return choises[Math.floor(Math.random()* choises.length)]
-
+    choices = ["rock", "paper", "scissors"];
+    return choices[Math.floor(Math.random()* choices.length)]
 }
 
 // create a funtion that plays one round of rock paper and scissors
@@ -24,17 +23,12 @@ function playRound(playerSelection, computerSelection){
 }
 
 function game(){
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    
+    return playRound(playerSelection, computerSelection)
 }
+    
 
 // const playerSelection = prompt("rock paper or scissors").toLowerCase()
-const playerSelection = "rock"
-
+const playerSelection = "rock";
 const computerSelection = getComputerChoice();
 
 console.log(playRound(playerSelection, computerSelection));
