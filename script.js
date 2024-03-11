@@ -1,5 +1,7 @@
 // create an funtion that get random choise from three alternatives
 
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
 
 
 function getComputerChoice(){
@@ -22,13 +24,10 @@ function playRound(playerSelection, computerSelection){
        }
 }
 
-function game(){
-    return playRound(playerSelection, computerSelection)
-}
-    
+
 
 // const playerSelection = prompt("rock paper or scissors").toLowerCase()
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
+
+
 
 console.log(playRound(playerSelection, computerSelection));
