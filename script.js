@@ -11,7 +11,7 @@ function getHumanChoice(){
     return getChoice;
 }
 
-let humanScore = 0
+let humanScore = 0;
 let computerScore = 0;
 
 function playround(humanChoice, computerChoice){
@@ -19,9 +19,10 @@ function playround(humanChoice, computerChoice){
        humanChoice ==="rock" && computerChoice ==="scissors" ||
         humanChoice ==="scissors" && computerChoice === "paper"
     ){
-
+        humanScore++;
         return "human wins" 
     }else{
+        computerScore++;
         return "computer wins"
     }
 }
